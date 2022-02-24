@@ -2,22 +2,406 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Poppins,sans-serif;
-    font-family: 23px;
+    font-family: "Poppins",sans-serif;
+    font-size: 23px;
+    border:0;
 }
-.button_login{
-    border-radius: 20px;
-    color: #fff;
-    background-color: rgb(18, 243, 168);
+.large_container{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: block;
+    line-height: 12px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1124px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    padding-right: 20px;
+    padding-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
 }
 .truedotelogo{
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-right: 0;
+    box-sizing: border-box;
 }
-.menu_list{
+.true{
+    size: 120%;
+    border-style: solid;
+    border-color: transparent;
+    height: auto;
+    display: block;
+}
+.header_list{
     display: flex;
-    color: rgba(124, 58, 237, var(--tw-text-opacity));
+    justify-content: flex-end;
+    align-items: center;
 }
 .uppercase{
     text-transform: uppercase;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.menu_list{
+    display: flex;
+    opacity: 1;
+    color: rgba(124, 58, 237);
+    gap: 20px;
+    font-size: 20px;
+    line-height: 18px;
+    white-space: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.ultext{
+    font-size: 15px;
+}
+.header_menu{
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    display: inline-block;
+}
+.button_login{
+    color: rgba(255, 255, 255);
+    text-transform: uppercase;
+    width: 100px;
+    border-color: transparent;
+    background-color: rgba(0, 200, 83);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: none;
+}
+.btn{
+    margin-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.hidden{
+    display: none;
+}
+section{
+    display: block;
+}
+.section1{
+    position: relative;
+}
+.fisrtsectioncont{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    max-width: 1124px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.textscontents{
+    display: flex;
+    flex-direction: column;
+    flex:  1 1 0%;
+    align-items: flex-start;
+    padding-left: 50px;
+    /* width: 25%; */
+}
+h2{
+    display: block;    
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.truedotetext{
+    font-size:50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height:2;
+    text-align: left;
+    color:rgba(124, 58, 237);
+    margin-bottom: 20px;
+}
+p{
+    display: block;
+    margin: 0;
+}
+.truedoteparagraph{
+    color: rgba(145, 148, 162);
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.75;
+    font-weight: 500;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.truedote__buttons{
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.btn_withpurplebackground{
+    align-items: center;
+    border-color: transparent;
+    font-size: 17px;
+    padding-top: 20px;
+    background-color: rgba(124, 58, 237);
+    color: rgba(255, 255, 255);
+}
+.btn_withpurplebackground:hover{
+    background-color: rgba(247, 247, 247);
+    color: black;
+    border-color: rgba(202, 198, 198, 0.096);
+    box-shadow:  var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.btn2{
+    border-radius: 7px;
+    padding-left: 1.5em;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.btn_withgreybackground{
+    padding-top: 20px;
+    border-color: rgba(228, 223, 223, 0.096);
+    border-color: transparent;
+    align-items: center;
+    box-shadow:  var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    font-size: 17px;
+    background-color: rgba(247, 247, 247, var(--tw-bg-opacity));
+}
+.btn_withgreybackground:hover{
+    align-items: center;
+    background-color:rgba(124, 58, 237);
+    color:rgba(255, 255, 255);
+    border-color: transparent;
+}
+.landing_image{
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 10;
+    width: 100%;
+}
+.landimg{
+    width: 75%;
+    height: 75%;
+}
+/* section two starts here */
+.truedotesection2{
+    margin-top: 170px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    background-color: rgba(247, 247, 247);
+    box-shadow: 0 0 #000;
+}
+.sectiontwocont{
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.txtfeat{
+    font-weight: 400;
+    text-align: center;
+    color: rgba(124, 58, 237);
+    line-height: 30px;
+    font-size: 22px;
+    align-items: center;
+}
+.truedotefootertext{
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(145, 148, 162);
+}
+p{
+    margin: 0;
+}
+/* responsiveness */
+@media (max-width:639px) {
+    menu{
+        display: inline-block;
+    }
+    .menu_list{
+        display: none;
+    }
+    .button_login{
+        display: none;
+    }
+    .menuselection{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .section1{
+        position: relative;
+    }
+    .fisrtsectioncont{
+        display: flex;
+        gap: 20px;
+        margin-top: 70px;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .textcontents{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .truedotetext{
+        text-align: center;
+        line-height: 30px;
+        font-weight: inherit;
+        font-size: inherit;
+        margin-bottom: 30px;
+    }
+    .landing_image{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        z-index: 10;
+        /* flex: 1 1 0%; */
+    }
+    .landimg{
+        height: 83%;
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+    .truedote__buttons{
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .section{
+        display: block;
+        box-sizing: border-box;
+    }
+    .truedotesection2{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 30px;
+    }
+    .txtfeat{
+        font-weight: 400;
+        text-align: center;
+        color: rgba(124, 58, 237);
+        line-height: 30px;
+        font-size: 22px;
+        align-items: center;
+    }
+    .truedotefootertext p{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    .sectiontwocont{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width:1023px){
+    header{
+        display: block;
+        line-height: 12px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .menu{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1124px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;    
+        padding-right: 20px;
+        padding-left: 20px;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .fisrtsectioncont{
+        flex-direction: column-reverse;
+    }    
+    .landing_image{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }   
+    .truedotetext{
+        text-align: center;
+        line-height: 30px;
+        font-weight: 700;
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .truedote__buttons{
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .truedotefootertext {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    .truedotesection2{
+        margin-top: 70px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .sectiontwocont{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
